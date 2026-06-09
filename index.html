@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASEAN Weekly Economic Update - 9 June 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;600;700&display=swap');
+        
+        body {
+            font-family: 'Sarabun', sans-serif;
+            background-color: #f8fafc;
+        }
+        .country-card {
+            background: white;
+            border-radius: 24px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            overflow: hidden;
+            margin-bottom: 2rem;
+            border: 1px solid #f1f5f9;
+            transition: all 0.3s ease;
+        }
+        .country-card:hover {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            transform: translateY(-2px);
+        }
+        .header-gradient {
+            background: linear-gradient(135deg, #020617 0%, #0f172a 50%, #1e293b 100%);
+        }
+        .flow-card {
+            transition: all 0.3s ease;
+        }
+        .flow-card:hover {
+            transform: translateY(-5px);
+        }
+        .inflow { color: #10b981; }
+        .outflow { color: #f43f5e; }
+        .btn-source {
+            transition: all 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .btn-source:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+        }
+    </style>
+</head>
+<body class="text-slate-800">
+
+    <!-- Header -->
+    <header class="header-gradient text-white py-14 px-6 shadow-xl relative overflow-hidden">
+        <!-- Background decorative elements -->
+        <div class="absolute inset-0 opacity-10 pointer-events-none">
+            <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                <defs>
+                    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" stroke-width="1" />
+                    </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#grid)" />
+            </svg>
+        </div>
+
+        <div class="max-w-6xl mx-auto relative z-10">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+                <div>
+                    <div class="flex items-center gap-2 mb-3">
+                        <span class="px-2.5 py-1 bg-blue-500/20 text-blue-300 text-xs font-bold rounded-md tracking-wider uppercase">Weekly Economic Update</span>
+                        <span class="h-2 w-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                    </div>
+                    <h1 class="text-3xl md:text-5xl font-black tracking-tighter italic uppercase">ASEAN <span class="text-blue-400">ECONOMIC</span> UPDATE</h1>
+                    <p class="text-slate-400 mt-2 text-lg">รายงานและประเมินภาวะเศรษฐกิจรายสัปดาห์กลุ่มประเทศอาเซียนและเอเชียแปซิฟิก</p>
+                    
+                    <!-- Updated Embed Link to SharePoint PDF -->
+                    <div class="mt-6 flex flex-wrap gap-3">
+                        <a href="https://bblasset.sharepoint.com/:b:/r/sites/EconUpdate_Research/Econ%20Research%20Publication/9.%20ASEAN%20Weekly%20Review/20260609%20ASEAN%20Macro%20Update.pdf?csf=1&web=1&e=r8LYeh" target="_blank" class="btn-source bg-blue-600 hover:bg-blue-500 text-white px-5 py-2.5 rounded-xl text-sm font-semibold shadow-lg">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                            </svg>
+                            ดูไฟล์ต้นฉบับ (20260609 ASEAN Macro Update.pdf)
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-white/10 backdrop-blur-md border border-white/20 p-5 rounded-2xl text-left md:text-right w-full md:w-auto">
+                    <p class="text-xs font-bold text-blue-300 uppercase tracking-widest">ประจำวันที่</p>
+                    <p class="text-2xl font-bold mt-1">8 - 12 มิถุนายน 2026</p>
+                    <div class="border-t border-white/10 mt-2 pt-2 text-[11px] text-slate-400">
+                        วิเคราะห์ CPI Divergence, FX Pressure และความผันผวนของ Local Rates
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto py-10 px-6">
+        
+        <!-- SECTION: EXECUTIVE SUMMARY -->
+        <section class="mb-12 bg-white rounded-3xl p-8 border border-slate-100 shadow-sm relative overflow-hidden">
+            <div class="absolute top-0 left-0 bg-blue-600 h-full w-2"></div>
+            <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+                <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
+                </svg>
+                Executive Summary
+            </h2>
+            <p class="text-slate-600 leading-relaxed mb-6">
+                ตลาดเอเชียและอาเซียนในช่วงต้นเดือน มิ.ย. 2026 กำลังเคลื่อนเข้าสู่ภาวะที่ <strong>“ภาพมหภาคเริ่มแตกต่างกันมากขึ้น (Macro Divergence)”</strong> หลังแรงกระแทกจากราคาพลังงาน เงินเฟ้อ และค่าเงินเริ่มส่งผลต่อแต่ละประเทศไม่เท่ากัน ขณะที่ตลาดเริ่มลดความกังวลบางส่วนจากข้อมูลเงินเฟ้อที่ชะลอลงในบางประเทศ แต่แรงกดดันด้านต้นทุนพลังงานและเสถียรภาพอัตราแลกเปลี่ยนยังทำให้ธนาคารกลางหลายแห่งในอาเซียนต้องดำเนินนโยบายด้วยความระมัดระวังเป็นพิเศษ
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100">
+                    <div class="font-bold text-slate-900 mb-1.5 flex items-center gap-2">
+                        <span class="h-2 w-2 rounded-full bg-blue-500"></span> 1. Policy Divergence
+                    </div>
+                    <p class="text-sm text-slate-600">ไทยและมาเลเซียมีพื้นที่ให้ธนาคารกลางคงดอกเบี้ยได้มากกว่า ขณะที่อินโดนีเซียและฟิลิปปินส์เผชิญแรงกดดันที่ตึงเครียดด้านเงินเฟ้อและค่าเงิน</p>
+                </div>
+                <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100">
+                    <div class="font-bold text-slate-900 mb-1.5 flex items-center gap-2">
+                        <span class="h-2 w-2 rounded-full bg-yellow-500"></span> 2. Selective Equity Market
+                    </div>
+                    <p class="text-sm text-slate-600">ตลาดหุ้นสิงคโปร์และเวียดนามโดดเด่นจากวัฏจักรเทคโนโลยีและการฟื้นตัวของภาคการผลิต ต่างกับอินโดนีเซียที่ถูกกดดันจากเงินทุนไหลออก</p>
+                </div>
+                <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100">
+                    <div class="font-bold text-slate-900 mb-1.5 flex items-center gap-2">
+                        <span class="h-2 w-2 rounded-full bg-emerald-500"></span> 3. Rates and Local Fixed Income
+                    </div>
+                    <p class="text-sm text-slate-600">ตราสารหนี้ท้องถิ่นสะท้อนความผันผวนเฉพาะตัว เช่น ตลาดกังวลนโยบายอัตราแลกเปลี่ยนของอินโดนีเซีย ขณะที่ฟิลิปปินส์เริ่มมี Value ดีขึ้น</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION: REGION FOCUS: ASEAN IN A NUTSHELL -->
+        <section class="mb-12 bg-slate-900 text-white rounded-3xl p-8 shadow-xl relative overflow-hidden">
+            <div class="absolute right-0 top-0 opacity-10 pointer-events-none">
+                <svg width="200" height="200" viewBox="0 0 100 100" fill="white">
+                    <circle cx="50" cy="50" r="40" />
+                </svg>
+            </div>
+            <div class="max-w-3xl">
+                <span class="text-blue-400 text-xs font-bold uppercase tracking-wider">Macro Perspective</span>
+                <h3 class="text-2xl font-black mt-2 mb-4">ASEAN IN A NUTSHELL</h3>
+                <p class="text-slate-300 text-sm leading-relaxed mb-4">
+                    ภูมิภาคอาเซียนกำลังเผชิญหน้ากับสภาวะ <strong>Policy Divergence</strong> อย่างมีนัยสำคัญ ข้อมูลเงินเฟ้อเดือน พ.ค. ปรากฏแนวโน้มที่แตกต่างอย่างสิ้นเชิง: ไทยและฟิลิปปินส์พบ Headline CPI ชะลอตัวลง ขณะที่ฝั่งอินโดนีเซียเร่งตัวขึ้นจากราคาสินค้าหมวดอาหารและต้นทุนภายในประเทศ 
+                </p>
+                <p class="text-slate-300 text-sm leading-relaxed mb-4">
+                    แม้ Manufacturing PMI ส่วนใหญ่จะยืนเหนือระดับ 50 บ่งชี้ว่าผลกระทบเชิง Supply Shock ในภาคการผลิตยังไม่สร้างความเสียหายรุนแรง แต่ประเทศที่มีทิศทางการผลิตฟื้นตัวแข็งแกร่ง (อินโดนีเซีย, ฟิลิปปินส์) กลับเป็นกลุ่มที่เผชิญหน้ารับความเสี่ยงจากเงินเฟ้อ อัตราแลกเปลี่ยน และข้อจำกัดด้านนโยบายการเงินสูงสุดเช่นกัน
+                </p>
+                <div class="flex flex-wrap gap-4 text-xs mt-6 text-slate-300">
+                    <div class="flex items-center gap-2 bg-slate-800 px-4 py-2 rounded-xl">
+                        <span class="h-2 w-2 rounded-full bg-emerald-400"></span>
+                        <span>FDI & Manufacturing Resilience: Vietnam / Singapore</span>
+                    </div>
+                    <div class="flex items-center gap-2 bg-slate-800 px-4 py-2 rounded-xl">
+                        <span class="h-2 w-2 rounded-full bg-rose-400"></span>
+                        <span>High FX Stability Concerns: Indonesia</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- COUNTRY SPECIFIC MACRO & POLICY -->
+        <div class="flex items-center gap-3 mb-6">
+            <div class="h-10 w-2 bg-blue-600 rounded-full"></div>
+            <h2 class="text-3xl font-black text-slate-900 tracking-tight">MACRO & POLICY UPDATES (BY COUNTRY)</h2>
+        </div>
+
+        <!-- 1. THAILAND -->
+        <section class="country-card">
+            <div class="bg-blue-900 h-2 w-full"></div>
+            <div class="p-8">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-6">
+                    <div class="flex items-center gap-4">
+                        <span class="text-4xl">🇹🇭</span>
+                        <div>
+                            <h2 class="text-2xl font-bold text-slate-900">ประเทศไทย</h2>
+                            <p class="text-xs text-slate-500">Growth Surprise แต่ Upside เริ่มจำกัด</p>
+                        </div>
+                    </div>
+                    <div class="bg-blue-50 px-4 py-2 rounded-xl border border-blue-100 text-center">
+                        <span class="text-xs text-blue-700 block font-semibold">BOT Stance</span>
+                        <span class="text-xl font-bold text-blue-900">On Hold Expected</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-12 gap-8 text-sm text-slate-600">
+                    <div class="md:col-span-8 space-y-4">
+                        <p class="leading-relaxed">
+                            เศรษฐกิจไทยมีภาพรวมที่ดีกว่าคาดในช่วงต้นปีด้วย GDP ไตรมาส 1/2026 ขยายตัวเด่นชัด หนุนโดยการลงทุนกลุ่มสินค้าคงทน (Durable Goods) เช่น ยานยนต์ และอานิสงส์การส่งออกสินค้าอิเล็กทรอนิกส์ อย่างไรก็ตาม พลังขับเคลื่อนนี้คาดว่าจะแผ่วลงในช่วงครึ่งปีหลังจากการบริโภคภายในประเทศที่ยังเปราะบางและขีดจำกัดทางงบประมาณภาครัฐที่แคบลง
+                        </p>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-2">
+                            <div class="bg-slate-50 p-4 rounded-xl">
+                                <span class="font-bold text-slate-900 text-xs block mb-1">Local Fixed Income:</span>
+                                ThaiGB Curve เกิดความแบนราบ (Flattened) โดย Yield ระยะสั้น 2–5 ปีแกว่งตัวในกรอบแคบ สอดคล้องกับถ้อยแถลงของ BOT ที่มองเงินเฟ้อขยับขึ้นชั่วคราวและยังไม่มีความจำเป็นต้องรีบเร่งปรับเปลี่ยนทิศทางอัตราดอกเบี้ยนโยบาย
+                            </div>
+                            <div class="bg-amber-50/50 p-4 rounded-xl border border-amber-100">
+                                <span class="font-bold text-amber-900 text-xs block mb-1">ความต้องการประมูลพันธบัตร:</span>
+                                ความต้องการตราสารหนี้ระยะยาวมีสัญญานชะลอตัวลง สะท้อนจากการประมูล 5Y ThaiGB ที่ระดับ Bid/Cover อ่อนตัวลง โดยต่างชาติเริ่มสลับกลับมาขายสุทธิบางส่วนช่วงต้นเดือน มิ.ย.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Modified: Focus on Economy rather than Core Indicator rates -->
+                    <div class="md:col-span-4 bg-slate-900 text-white p-6 rounded-3xl flex flex-col justify-between">
+                        <div>
+                            <h4 class="font-bold text-blue-400 text-xs uppercase tracking-widest mb-3">Economic Highlight</h4>
+                            <div class="text-4xl font-black mb-1">+2.8%</div>
+                            <p class="text-[11px] text-slate-400">อัตราการขยายตัว GDP ไตรมาส 1/2026 สูงกว่าที่ตลาดประเมินไว้จากแรงขับเคลื่อนของการส่งออกอิเล็กทรอนิกส์และการลงทุนกลุ่ม Durable Goods</p>
+                        </div>
+                        <div class="mt-6 border-t border-slate-800 pt-4 text-xs">
+                            <span class="text-slate-400 block">ประมาณการขยายตัวปี 2026:</span>
+                            <span class="font-semibold text-emerald-400">2.0% (ปรับเพิ่มจาก 1.6%)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. INDONESIA -->
+        <section class="country-card">
+            <div class="bg-red-600 h-2 w-full"></div>
+            <div class="p-8">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-6">
+                    <div class="flex items-center gap-4">
+                        <span class="text-4xl">🇮🇩</span>
+                        <div>
+                            <h2 class="text-2xl font-bold text-slate-900">อินโดนีเซีย</h2>
+                            <p class="text-xs text-slate-500">ความตึงเครียดของอัตราแลกเปลี่ยน (FX Pressure) และแรงบีบคั้นดุลการค้า</p>
+                        </div>
+                    </div>
+                    <div class="bg-red-50 px-4 py-2 rounded-xl border border-red-100 text-center">
+                        <span class="text-xs text-red-700 block font-semibold">12m SRBI Yield</span>
+                        <span class="text-xl font-bold text-red-900">7.25%</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-12 gap-8 text-sm text-slate-600">
+                    <div class="md:col-span-8 space-y-4">
+                        <p class="leading-relaxed">
+                            อินโดนีเซียตกเป็นศูนย์กลางของปัจจัยความเสี่ยงหลักในสัปดาห์นี้ ดัชนีเงินเฟ้อเดือน พ.ค. เร่งตัว ขณะที่ดุลการค้าเดือน เม.ย. อ่อนกำลังแคบลงแตะจุดต่ำสุดในรอบหลายปีจากผลกระทบนำเข้าพลังงาน ภาพโครงสร้างภายนอกที่เปราะบางกระตุ้นให้ค่าเงินรูเปียห์อ่อนค่าทะลุระดับจิตวิทยาสำคัญผ่าน 18,000 รูเปียห์ต่อดอลลาร์ฯ
+                        </p>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-2">
+                            <div class="bg-slate-50 p-4 rounded-xl">
+                                <span class="font-bold text-slate-900 text-xs block mb-1">ความเสี่ยงเชิงนโยบาย:</span>
+                                ตลาดปรับเปลี่ยนมุมมองและคาดการณ์ว่ามีแนวโน้มสูงที่ Bank Indonesia (BI) อาจจำเป็นต้องปรับขึ้นอัตราดอกเบี้ยนโยบายเพิ่มเติม หากอัตราแลกเปลี่ยนขยับเข้าใกล้ระดับ 18,500
+                            </div>
+                            <div class="bg-rose-50/50 p-4 rounded-xl border border-rose-100">
+                                <span class="font-bold text-rose-950 text-xs block mb-1">ผลกระทบต่อตลาดตราสารหนี้:</span>
+                                อัตราผลตอบแทนพันธบัตรรัฐบาล (IndoGB Yield) ปรับตัวเพิ่มขึ้น 10-20 bps ทั่วทั้งโครงสร้าง ยิ่งไปกว่านั้น ยอดประมูลพันธบัตรประเภท SRBI 12 เดือนดีดตัวสู่ 7.25% บ่งชี้ว่ามีต้นทุนที่สูงมากในการพยุงค่าเงินและดูดซับสภาพคล่องภายนอก
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Modified: Focus on Economy rather than Core Indicator rates -->
+                    <div class="md:col-span-4 bg-slate-900 text-white p-6 rounded-3xl flex flex-col justify-between">
+                        <div>
+                            <h4 class="font-bold text-red-400 text-xs uppercase tracking-widest mb-3">Economic Highlight</h4>
+                            <div class="text-xl font-black mb-1">Trade Deficit Threat</div>
+                            <p class="text-[11px] text-slate-400">ดุลการค้าเดือน เม.ย. แคบลงแตะระดับต่ำสุดในรอบหลายปีจากการนำเข้าพลังงานที่เพิ่มขึ้น ส่งผลต่อความแข็งแกร่งของ External Balance ปี 2026</p>
+                        </div>
+                        <div class="mt-6 border-t border-slate-800 pt-4 text-xs">
+                            <span class="text-slate-400 block">ปัจจัยเสี่ยงสูงสุด:</span>
+                            <span class="font-semibold text-rose-400">เสถียรภาพค่าเงินรูเปียห์ (FX Risk)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. MALAYSIA -->
+        <section class="country-card">
+            <div class="bg-yellow-400 h-2 w-full"></div>
+            <div class="p-8">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-6">
+                    <div class="flex items-center gap-4">
+                        <span class="text-4xl">🇲🇾</span>
+                        <div>
+                            <h2 class="text-2xl font-bold text-slate-900">มาเลเซีย</h2>
+                            <p class="text-xs text-slate-500">Stable Rates ท่ามกลางประเด็นจับตานโยบายการคลังระดับรัฐและการเลือกตั้ง</p>
+                        </div>
+                    </div>
+                    <div class="bg-yellow-50 px-4 py-2 rounded-xl border border-yellow-100 text-center">
+                        <span class="text-xs text-yellow-700 block font-semibold">MGS 3Y Yield</span>
+                        <span class="text-xl font-bold text-slate-900">3.24%</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-12 gap-8 text-sm text-slate-600">
+                    <div class="md:col-span-8 space-y-4">
+                        <p class="leading-relaxed">
+                            มาเลเซียมีความแข็งแกร่ง (Resilience) และมีเสถียรภาพสูงสุดในกลุ่มประเทศที่เผชิญแรงกดดันอัตราแลกเปลี่ยน อัตราผลตอบแทนพันธบัตรรัฐบาล (MGS Yield) ขยับตัวในกรอบที่แคบมาก แม้ค่าเงินริงกิตจะผันผวนและมีรายงานเงินทุนต่างชาติไหลออกเล็กน้อยในกลุ่มพันธบัตร เนื่องจากสภาพคล่องในประเทศยังสามารถทำหน้าที่เป็นตัวดูดซับแรงกระแทกจากตลาดโลกได้อย่างมีประสิทธิภาพ
+                        </p>
+                        <div class="bg-amber-50 p-4 rounded-xl border border-amber-100 text-xs text-amber-900">
+                            <strong>📢 ปัจจัยเสี่ยงและจุดเปลี่ยนสำคัญ:</strong> โฟกัสเริ่มขยับจากความเสี่ยงทางนโยบายการเงินไปสู่ประเด็นการคลังและการเมืองภายในประเทศ โดยเฉพาะอัตราขาดดุลงบประมาณรายเดือนที่ขยับขึ้นชั่วคราวจากการจ่ายอุดหนุนราคาเชื้อเพลิง (Fuel Subsidies) รวมถึงแรงกดดันทางการเมืองรอบทิศทางก่อนการเลือกตั้งระดับรัฐยะโฮร์ (Johor State Election) 
+                        </div>
+                    </div>
+                    
+                    <!-- Modified: Focus on Economy rather than Core Indicator rates -->
+                    <div class="md:col-span-4 bg-slate-900 text-white p-6 rounded-3xl flex flex-col justify-between">
+                        <div>
+                            <h4 class="font-bold text-yellow-400 text-xs uppercase tracking-widest mb-3">Economic Highlight</h4>
+                            <div class="text-xl font-black mb-1">Fiscal Deficit Risk</div>
+                            <p class="text-[11px] text-slate-400">อัตราการขาดดุลมีแนวโน้มเพิ่มขึ้นจากการอุดหนุนราคาเชื้อเพลิง ท่ามกลางแรงกดดันการเมืองก่อนเลือกตั้งรัฐยะโฮร์</p>
+                        </div>
+                        <div class="mt-6 border-t border-slate-800 pt-4 text-xs">
+                            <span class="text-slate-400 block">Manufacturing PMI:</span>
+                            <span class="font-semibold text-yellow-400">ต่ำกว่าระดับ 50 (ชะลอตัวชั่วคราว)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. PHILIPPINES -->
+        <section class="country-card">
+            <div class="bg-rose-600 h-2 w-full"></div>
+            <div class="p-8">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-6">
+                    <div class="flex items-center gap-4">
+                        <span class="text-4xl">🇵🇭</span>
+                        <div>
+                            <h2 class="text-2xl font-bold text-slate-900">ฟิลิปปินส์</h2>
+                            <p class="text-xs text-slate-500">ดัชนีเงินเฟ้อเริ่มชะลอตัว แต่ทิศทางนโยบายตึงตัว (Tightening Cycle) ยังไม่ยุติ</p>
+                        </div>
+                    </div>
+                    <div class="bg-rose-50 px-4 py-2 rounded-xl border border-rose-100 text-center">
+                        <span class="text-xs text-rose-700 block font-semibold">RPGB 10Y Yield</span>
+                        <span class="text-xl font-bold text-rose-600">7.49%</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-12 gap-8 text-sm text-slate-600">
+                    <div class="md:col-span-8 space-y-4">
+                        <p class="leading-relaxed">
+                            ข้อมูล Headline CPI ของเดือน พ.ค. ออกมาชะลอตัวลงเกินคาด ซึ่งเป็นข่าวดีที่ช่วยผ่อนปรนแนวโน้มความเสี่ยงในการปรับขึ้นอัตราดอกเบี้ยฉุกเฉินรอบพิเศษ (Off-Cycle Hike) ของธนาคารกลางฟิลิปปินส์ (BSP) ลง ส่งผลให้ราคากลุ่มตราสารหนี้ฟิลิปปินส์ (RPGB) ขยับบวกชั่วคราวและอัตราผลตอบแทนระยะสั้นปรับลง 5–10 bps อย่างไรก็ตาม อัตราเงินเฟ้อยังตั้งหลักสูงกว่าขอบเขตเป้าหมายอย่างชัดเจน และ Core Inflation ยังสะท้อนผลกระทบระลอกสอง
+                        </p>
+                        <div class="bg-slate-50 p-4 rounded-xl text-xs">
+                            <strong>🎯 มุมมองด้าน Valuation:</strong> ตลาดตราสารหนี้และตลาด Rates ฟิลิปปินส์จะเริ่มทวีความน่าสนใจและมี Value สูงขึ้นมากในหมู่นักลงทุนต่างชาติทันที หากสถานการณ์ราคาน้ำมันทรงตัวและสกัดกั้นเงินเฟ้อได้สำเร็จตามแผนของ BSP ทั้งนี้ยังคงมีความเสี่ยงจำกัดเฉพาะอัตราแลกเปลี่ยนเงินเปโซ
+                        </div>
+                    </div>
+                    
+                    <!-- Modified: Focus on Economy rather than Core Indicator rates -->
+                    <div class="md:col-span-4 bg-slate-900 text-white p-6 rounded-3xl flex flex-col justify-between">
+                        <div>
+                            <h4 class="font-bold text-rose-400 text-xs uppercase tracking-widest mb-3">Economic Highlight</h4>
+                            <div class="text-xl font-black mb-1">Persistent Supply Cost</div>
+                            <p class="text-[11px] text-slate-400">แม้เงินเฟ้อ พ.ค. จะชะลอลงบ้าง แต่ราคาอาหารและพลังงานยังบีบคั้นการบริโภคและกำลังซื้อในครัวเรือนอย่างต่อเนื่อง</p>
+                        </div>
+                        <div class="mt-6 border-t border-slate-800 pt-4 text-xs">
+                            <span class="text-slate-400 block">เป้าหมายเสถียรภาพ:</span>
+                            <span class="font-semibold text-emerald-400">ควบคุมผลกระทบเงินเฟ้อรอบสอง</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. SINGAPORE & VIETNAM -->
+        <section class="country-card">
+            <div class="bg-emerald-600 h-2 w-full"></div>
+            <div class="p-8">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-6">
+                    <div class="flex items-center gap-4">
+                        <span class="text-4xl">🇸🇬 🇻🇳</span>
+                        <div>
+                            <h2 class="text-2xl font-bold text-slate-900">สิงคโปร์ และ เวียดนาม</h2>
+                            <p class="text-xs text-slate-500">ศูนย์กลางการเติบโตหลักของภาคการผลิตอิเล็กทรอนิกส์และเทคโนโลยีขั้นสูง</p>
+                        </div>
+                    </div>
+                    <div class="bg-emerald-50 px-4 py-2 rounded-xl border border-emerald-100 text-center">
+                        <span class="text-xs text-emerald-700 block font-semibold">Vietnam GDP Growth 2026F</span>
+                        <span class="text-xl font-bold text-emerald-900">+7.8%</span>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-6 text-sm text-slate-600">
+                    <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100">
+                        <h4 class="font-bold text-slate-900 mb-2 flex items-center gap-2">
+                            <span class="text-xl">🇸🇬</span> สิงคโปร์: Tech & AI Electronics Wave
+                        </h4>
+                        <p class="leading-relaxed text-xs">
+                            สิงคโปร์ได้รับอานิสงส์อย่างมหาศาลจากการประเมินตัวเลข GDP ไตรมาส 1/2026 ที่ออกมาแข็งแกร่งกว่าคาด ขณะเดียวกันดัชนีภาคการผลิตทางอุตสาหกรรมในเดือน เม.ย. ขยายตัวโดดเด่นจากพลังขับเคลื่อนในหมวด AI-related Electronics และอุตสาหกรรมเซมิคอนดักเตอร์ ส่งผลดีต่อพอร์ตการลงทุนในตลาดหุ้น โดยเฉพาะกลุ่มสถาบันการเงินและกองทุนรีทส์ (REITs)
+                        </p>
+                    </div>
+                    <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100">
+                        <h4 class="font-bold text-slate-900 mb-2 flex items-center gap-2">
+                            <span class="text-xl">🇻🇳</span> เวียดนาม: Manufacturing & FDI Leader
+                        </h4>
+                        <p class="leading-relaxed text-xs">
+                            รายงานวิจัยสถาบัน Maybank ได้ปรับเพิ่มแนวโน้มการขยายตัวทางเศรษฐกิจ (GDP Growth) สำหรับปี 2026 ของเวียดนามขึ้นสู่ 7.8% สะท้อนถึงเสถียรภาพความต้องการและกิจกรรมส่งออกที่ฟื้นตัว อย่างไรก็ตาม มีสัญญานเตือนเรื่องประมาณการเงินเฟ้อเฉลี่ยทั้งปีที่คาดว่าจะเพิ่มแตะระดับ 4.5% และสภาพคล่องซื้อขายในตลาดหุ้นที่ตึงตัวขึ้นชั่วคราว
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DATA SECTION: FIXED INCOME INDICATORS -->
+        <section class="mb-12 bg-white rounded-3xl p-8 border border-slate-100 shadow-sm overflow-hidden">
+            <h3 class="text-xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+                <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                </svg>
+                Fixed Income Indicators
+            </h3>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- ASEAN Sovereign yields table -->
+                <div>
+                    <h4 class="text-sm font-semibold text-slate-700 mb-3 uppercase tracking-wider border-b border-slate-100 pb-2">ASEAN Sovereign Bond Yields</h4>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-left border-collapse text-xs">
+                            <thead>
+                                <tr class="bg-slate-50 text-slate-600 font-semibold border-b border-slate-200">
+                                    <th class="p-2.5">Bond Instrument</th>
+                                    <th class="p-2.5 text-right">Last (%)</th>
+                                    <th class="p-2.5 text-right">1-Week (bps)</th>
+                                    <th class="p-2.5 text-right">1-Month (bps)</th>
+                                    <th class="p-2.5 text-right">YTD (bps)</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-slate-100 text-slate-700">
+                                <tr class="hover:bg-slate-50/80"><td class="p-2.5 font-medium">IndoGB - 2y</td><td class="p-2.5 text-right font-bold">6.84</td><td class="p-2.5 text-right text-rose-600 font-medium">+21</td><td class="p-2.5 text-right text-rose-600">+166</td><td class="p-2.5 text-right text-rose-600">+194</td></tr>
+                                <tr class="hover:bg-slate-50/80"><td class="p-2.5 font-medium">IndoGB - 5y</td><td class="p-2.5 text-right font-bold">6.90</td><td class="p-2.5 text-right text-rose-600 font-medium">+19</td><td class="p-2.5 text-right text-rose-600">+97</td><td class="p-2.5 text-right text-rose-600">+139</td></tr>
+                                <tr class="hover:bg-slate-50/80"><td class="p-2.5 font-medium">IndoGB - 10y</td><td class="p-2.5 text-right font-bold">6.84</td><td class="p-2.5 text-right text-rose-600 font-medium">+14</td><td class="p-2.5 text-right text-rose-600">+26</td><td class="p-2.5 text-right text-rose-600">+79</td></tr>
+                                <tr class="hover:bg-slate-50/80"><td class="p-2.5 font-medium">MGS - 3y</td><td class="p-2.5 text-right font-bold">3.24</td><td class="p-2.5 text-right text-rose-600 font-medium">+2</td><td class="p-2.5 text-right text-rose-600">+17</td><td class="p-2.5 text-right text-rose-600">+24</td></tr>
+                                <tr class="hover:bg-slate-50/80"><td class="p-2.5 font-medium">MGS - 10y</td><td class="p-2.5 text-right font-bold">3.57</td><td class="p-2.5 text-right text-rose-600 font-medium">+1</td><td class="p-2.5 text-right text-rose-600">+3</td><td class="p-2.5 text-right text-rose-600">+6</td></tr>
+                                <tr class="hover:bg-slate-50/80"><td class="p-2.5 font-medium">MGS - 30y</td><td class="p-2.5 text-right font-bold">4.08</td><td class="p-2.5 text-right text-emerald-600 font-medium">(0)</td><td class="p-2.5 text-right text-rose-600">+5</td><td class="p-2.5 text-right text-rose-600">+10</td></tr>
+                                <tr class="hover:bg-slate-50/80"><td class="p-2.5 font-medium">RPGB - 5y</td><td class="p-2.5 text-right font-bold">7.21</td><td class="p-2.5 text-right text-rose-600 font-medium">+2</td><td class="p-2.5 text-right text-rose-600">+149</td><td class="p-2.5 text-right text-rose-600">+147</td></tr>
+                                <tr class="hover:bg-slate-50/80"><td class="p-2.5 font-medium">RPGB - 10y</td><td class="p-2.5 text-right font-bold">7.49</td><td class="p-2.5 text-right text-slate-400 font-medium">0</td><td class="p-2.5 text-right text-rose-600">+135</td><td class="p-2.5 text-right text-rose-600">+149</td></tr>
+                                <tr class="hover:bg-slate-50/80"><td class="p-2.5 font-medium">SGS - 2y</td><td class="p-2.5 text-right font-bold">1.58</td><td class="p-2.5 text-right text-rose-600 font-medium">+7</td><td class="p-2.5 text-right text-rose-600">+22</td><td class="p-2.5 text-right text-rose-600">+11</td></tr>
+                                <tr class="hover:bg-slate-50/80"><td class="p-2.5 font-medium">SGS - 10y</td><td class="p-2.5 text-right font-bold">2.07</td><td class="p-2.5 text-right text-rose-600 font-medium">+6</td><td class="p-2.5 text-right text-rose-600">+10</td><td class="p-2.5 text-right text-emerald-600">(4)</td></tr>
+                                <tr class="hover:bg-slate-50/80"><td class="p-2.5 font-medium">SGS - 30y</td><td class="p-2.5 text-right font-bold">2.07</td><td class="p-2.5 text-right text-rose-600 font-medium">+4</td><td class="p-2.5 text-right text-emerald-600">(9)</td><td class="p-2.5 text-right text-emerald-600">(24)</td></tr>
+                                <tr class="hover:bg-slate-50/80"><td class="p-2.5 font-medium">ThaiGB - 2y</td><td class="p-2.5 text-right font-bold">1.22</td><td class="p-2.5 text-right text-emerald-600 font-medium">(1)</td><td class="p-2.5 text-right text-rose-600">+12</td><td class="p-2.5 text-right text-rose-600">+11</td></tr>
+                                <tr class="hover:bg-slate-50/80"><td class="p-2.5 font-medium">ThaiGB - 5y</td><td class="p-2.5 text-right font-bold">1.67</td><td class="p-2.5 text-right text-slate-400 font-medium">0</td><td class="p-2.5 text-right text-rose-600">+38</td><td class="p-2.5 text-right text-rose-600">+36</td></tr>
+                                <tr class="hover:bg-slate-50/80"><td class="p-2.5 font-medium">ThaiGB - 10y</td><td class="p-2.5 text-right font-bold">2.21</td><td class="p-2.5 text-right text-emerald-600 font-medium">(10)</td><td class="p-2.5 text-right text-rose-600">+37</td><td class="p-2.5 text-right text-rose-600">+58</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- ASEAN Money market & Interbank Swap Rates -->
+                <div>
+                    <h4 class="text-sm font-semibold text-slate-700 mb-3 uppercase tracking-wider border-b border-slate-100 pb-2">ASEAN & CNY Rates / Swap Indicators</h4>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-left border-collapse text-xs">
+                            <thead>
+                                <tr class="bg-slate-50 text-slate-600 font-semibold border-b border-slate-200">
+                                    <th class="p-2.5">Rate / Swap Instrument</th>
+                                    <th class="p-2.5 text-right">Last (%)</th>
+                                    <th class="p-2.5 text-right">1-Week (bps)</th>
+                                    <th class="p-2.5 text-right">1-Month (bps)</th>
+                                    <th class="p-2.5 text-right">YTD (bps)</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-slate-100 text-slate-700">
+                                <tr class="hover:bg-slate-50/80"><td class="p-2.5 font-medium">IndONIA (Indonesia)</td><td class="p-2.5 text-right font-bold">5.25</td><td class="p-2.5 text-right text-emerald-600 font-medium">(33)</td><td class="p-2.5 text-right text-rose-600">+107</td><td class="p-2.5 text-right text-rose-600">+113</td></tr>
+                                <tr class="hover:bg-slate-50/80"><td class="p-2.5 font-medium">6m SRBI Award</td><td class="p-2.5 text-right font-bold">6.90</td><td class="p-2.5 text-right text-rose-600 font-medium">+18</td><td class="p-2.5 text-right text-rose-600">+176</td><td class="p-2.5 text-right text-rose-600">+205</td></tr>
+                                <tr class="hover:bg-slate-50/80"><td class="p-2.5 font-medium">12m SRBI Award</td><td class="p-2.5 text-right font-bold">7.25</td><td class="p-2.5 text-right text-rose-600 font-medium">+33</td><td class="p-2.5 text-right text-rose-600">+204</td><td class="p-2.5 text-right text-rose-600">+233</td></tr>
+                                <tr class="hover:bg-slate-50/80"><td class="p-2.5 font-medium">3m KLIBOR (Malaysia)</td><td class="p-2.5 text-right font-bold">3.36</td><td class="p-2.5 text-right text-rose-600 font-medium">+1</td><td class="p-2.5 text-right text-rose-600">+12</td><td class="p-2.5 text-right text-rose-600">+8</td></tr>
+                                <tr class="hover:bg-slate-50/80"><td class="p-2.5 font-medium">MYR IRS - 2y</td><td class="p-2.5 text-right font-bold">3.44</td><td class="p-2.5 text-right text-slate-400 font-medium">0</td><td class="p-2.5 text-right text-rose-600">+11</td><td class="p-2.5 text-right text-rose-600">+20</td></tr>
+                                <tr class="hover:bg-slate-50/80"><td class="p-2.5 font-medium">MYR IRS - 5y</td><td class="p-2.5 text-right font-bold">3.54</td><td class="p-2.5 text-right text-rose-600 font-medium">+1</td><td class="p-2.5 text-right text-rose-600">+11</td><td class="p-2.5 text-right text-rose-600">+19</td></tr>
+                                <tr class="hover:bg-slate-50/80"><td class="p-2.5 font-medium">PHP Overnight (Philippines)</td><td class="p-2.5 text-right font-bold">4.49</td><td class="p-2.5 text-right text-rose-600 font-medium">+1</td><td class="p-2.5 text-right text-rose-600">+24</td><td class="p-2.5 text-right text-rose-600">+2</td></tr>
+                                <tr class="hover:bg-slate-50/80"><td class="p-2.5 font-medium">PHP OIS - 2y</td><td class="p-2.5 text-right font-bold">5.95</td><td class="p-2.5 text-right text-emerald-600 font-medium">(5)</td><td class="p-2.5 text-right text-rose-600">+148</td><td class="p-2.5 text-right text-rose-600">+153</td></tr>
+                                <tr class="hover:bg-slate-50/80"><td class="p-2.5 font-medium">SORA (Singapore)</td><td class="p-2.5 text-right font-bold">0.94</td><td class="p-2.5 text-right text-rose-600 font-medium">+7</td><td class="p-2.5 text-right text-rose-600">+14</td><td class="p-2.5 text-right text-rose-600">+4</td></tr>
+                                <tr class="hover:bg-slate-50/80"><td class="p-2.5 font-medium">SGD OIS - 2y</td><td class="p-2.5 text-right font-bold">1.50</td><td class="p-2.5 text-right text-rose-600 font-medium">+4</td><td class="p-2.5 text-right text-rose-600">+18</td><td class="p-2.5 text-right text-emerald-600">(4)</td></tr>
+                                <tr class="hover:bg-slate-50/80"><td class="p-2.5 font-medium">SGD OIS - 5y</td><td class="p-2.5 text-right font-bold">1.89</td><td class="p-2.5 text-right text-rose-600 font-medium">+2</td><td class="p-2.5 text-right text-rose-600">+21</td><td class="p-2.5 text-right text-emerald-600">(3)</td></tr>
+                                <tr class="hover:bg-slate-50/80"><td class="p-2.5 font-medium">THOR (Thailand)</td><td class="p-2.5 text-right font-bold">0.99</td><td class="p-2.5 text-right text-emerald-600 font-medium">(0)</td><td class="p-2.5 text-right text-emerald-600">(0)</td><td class="p-2.5 text-right text-emerald-600">(25)</td></tr>
+                                <tr class="hover:bg-slate-50/80"><td class="p-2.5 font-medium">THB OIS - 2y</td><td class="p-2.5 text-right font-bold">1.38</td><td class="p-2.5 text-right text-rose-600 font-medium">+1</td><td class="p-2.5 text-right text-rose-600">+33</td><td class="p-2.5 text-right text-rose-600">+31</td></tr>
+                                <tr class="hover:bg-slate-50/80"><td class="p-2.5 font-medium">THB OIS - 5y</td><td class="p-2.5 text-right font-bold">1.79</td><td class="p-2.5 text-right text-slate-400 font-medium">0</td><td class="p-2.5 text-right text-rose-600">+45</td><td class="p-2.5 text-right text-rose-600">+55</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <p class="text-[10px] text-slate-400 mt-4 italic">Sources: BPAM, Bloomberg, Maybank IBG Research | Note: 1-week, 1-month and YTD = Movements in basis points (bps) or percentage change</p>
+        </section>
+
+        <!-- WEEK AHEAD EVENTS -->
+        <section class="mb-12 bg-slate-50 border border-slate-100 rounded-3xl p-8">
+            <h3 class="text-xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+                <svg class="w-6 h-6 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                </svg>
+                Week Ahead: Key Events to Watch
+            </h3>
+            <ul class="space-y-3 text-sm text-slate-600">
+                <li class="flex items-start gap-2">
+                    <span class="text-blue-600 font-bold">•</span>
+                    <span><strong>ข้อมูลทุนสำรองระหว่างประเทศอินโดนีเซีย:</strong> เป็นตัวบ่งชี้ความเร็วของกระบวนการแทรกแซงและพยุงค่าเงินของ BI ว่าส่งผลกระทบต่อกันชนภายนอกมากน้อยเพียงใด</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-blue-600 font-bold">•</span>
+                    <span><strong>การประมูลพันธบัตรท้องถิ่น:</strong> ติดตามผลตอบรับของการประมูลตราสารหนี้ใหม่ในภูมิภาค (IndoGB, RPGB 3Y/8Y, ThaiGB 10Y/50Y) เพื่อวัดระดับ Yield Premium ที่นักลงทุนต้องการ</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-blue-600 font-bold">•</span>
+                    <span><strong>ตัวเลขอัตราเงินเฟ้อสหรัฐฯ (US CPI/PPI):</strong> ปัจจัยหลักในเวทีโลกที่จะเข้ามากำหนดทิศทางของ Yield สหรัฐฯ และกระแสการเคลื่อนไหวของค่าเงินกลุ่มเกิดใหม่ (EM FX)</span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- SUMMARY CONCLUSION -->
+        <section class="mb-6 bg-slate-100 rounded-3xl p-8 border border-slate-200">
+            <h3 class="text-xl font-bold text-slate-900 mb-3">สรุปกลยุทธ์และคำแนะนำการลงทุน (Investment Takeaway)</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                ภาพอาเซียนในช่วงต้นเดือน มิ.ย. 2026 คือกลุ่มภูมิภาคที่ยังมีโอกาสในการเติบโต แต่ต้องใช้กลยุทธ์เลือกลงทุนอย่างระมัดระวังเป็นพิเศษ (Selective Allocation) เนื่องจากทิศทางของความเสี่ยงมหภาคเริ่มแตกต่างกันชัดเจน ประเทศที่สามารถบริหารเสถียรภาพค่าเงิน (FX Stability) จัดการเงินเฟ้อได้ และมีแรงดีมานด์ในประเทศที่แน่นอนจะได้รับน้ำหนักพิจารณาที่ดีกว่า
+            </p>
+            <p class="text-slate-600 text-sm leading-relaxed">
+                สำหรับกลุ่มตราสารหนี้ท้องถิ่น (Local Fixed Income) ควรพิจารณาประเทศที่มี Real Yield และอัตราดอกเบี้ยปลายทางคาดการณ์ที่สอดรับกับสภาวะแวดล้อม: หลีกเลี่ยงแรงกดดันในตลาดอินโดนีเซียเป็นการชั่วคราวจนกว่าความผันผวนของค่าเงินรูเปียห์จะคลี่คลาย, ทยอยสะสมคุณค่าในกลุ่ม RPGB ฟิลิปปินส์เมื่อเงินเฟ้อส่งสัญญานชะลอตัวลงจริง, และรักษาน้ำหนักกลุ่มตราสารหนี้ระยะสั้นไทยจากภาพนโยบายคงอัตราดอกเบี้ยต่อเนื่องของธนาคารแห่งประเทศไทย
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-12 px-6">
+        <div class="max-w-6xl mx-auto text-center">
+            <div class="flex justify-center gap-4 mb-6">
+                <span class="px-2.5 py-1 bg-red-600 text-white text-[10px] font-bold rounded tracking-wider">CONFIDENTIAL</span>
+                <span class="px-2.5 py-1 bg-blue-600 text-white text-[10px] font-bold rounded tracking-wider">INTERNAL USE ONLY</span>
+            </div>
+            <p class="text-sm">© 2026 ASEAN Macro Insights & Research. Prepared from: 20260609 Weekly ASEAN.docx</p>
+            <p class="text-[11px] text-slate-500 mt-2">ข้อมูลนี้จัดทำขึ้นโดยอ้างอิงจากแหล่งข้อมูลและทัศนะที่เชื่อถือได้ภายในองค์กร ห้ามทำการคัดลอก เผยแพร่ หรือส่งต่อโดยไม่ได้รับอนุญาตล่วงหน้า</p>
+        </div>
+    </footer>
+</body>
+</html>
